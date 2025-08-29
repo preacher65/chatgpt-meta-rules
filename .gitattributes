@@ -1,0 +1,3 @@
+# enforce LF for text so hashes are stable
+*.txt text eol=lf
+*.md  text eol=lf
