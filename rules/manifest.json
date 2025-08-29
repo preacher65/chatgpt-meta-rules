@@ -4,7 +4,7 @@
   "files": {
     "baseline-v2.2.7": {
       "path": "rules/baseline-rules-v2.2.7-ASCII.txt",
-      "sha256": "F910509FD7BF0503D3D1AA4F73B5CBA7DBBD453EFA73D973438CF0AB44F02E60"
+      "sha256": "4A596520C96615393A7699BD647352595790FCC89B86E70147C639B27B52328A"
     },
     "baseline-v2.2.6": {
       "path": "rules/baseline-rules-v2.2.6-ASCII.txt",
