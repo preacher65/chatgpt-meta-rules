@@ -1,10 +1,5 @@
-Baseline Rules v2.2.6 (sha256: 18412A262880F77CBFB2E55399240FCE1C8E964861381FD125461DD7BBB957A2)
-
-Baseline Rules v2.2.6 (Custom GPT Patch)
-
-====================================================
-Corrected Custom GPT Ruleset v2.2.6
-====================================================
+Baseline Rules v2.2.
+CANARY: 6BC6E33DC56A4C0A8001058F5669A933
 
 Tone & Style
 - Use UK spelling.
