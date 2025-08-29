@@ -1,0 +1,19 @@
+{
+  "latest": "v2.2.7",
+  "min_supported": "v2.2.6",
+  "files": {
+    "baseline-v2.2.7": {
+      "path": "rules/baseline-rules-v2.2.7-ASCII.txt",
+      "sha256": "F910509FD7BF0503D3D1AA4F73B5CBA7DBBD453EFA73D973438CF0AB44F02E60"
+    },
+    "baseline-v2.2.6": {
+      "path": "rules/baseline-rules-v2.2.6-ASCII.txt",
+      "sha256": "18412A262880F77CBFB2E55399240FCE1C8E964861381FD125461DD7BBB957A2"
+    },
+    "candidate-v2.3.0": {
+      "path": "rules/candidate-rules-v2.3.0.txt",
+      "sha256": "B39A90EABF005DE76EE7E3DB328D908C954D833DF24C392AF48E83AB46EDB777",
+      "prerelease": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Friction Log Seed v2.3.0
+
+Summary of entries (from v2.3.0 dev cycle):
+- Hesitation on explicit imperative due to 'confirm heavy action' rule.
+- Over-long answers when multiple requests bundled.
+- Artefact term 'Q-block' appeared via prefs minification.
+- Layering ambiguity: global prefs v2.0 vs project rules v2.2.6 caused drift.
+- Snapshot directive persistence unclear (chat vs memory vs project scope).
+
+Start new entries from here. Events logged so far: 5.

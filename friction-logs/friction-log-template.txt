@@ -1,0 +1,23 @@
+  # Friction Log (Template for New Project)
+
+Use: compact trace of unexpected behaviours to build evidence for next baseline revision.
+Each entry = Trigger, Effect, Why it happened, Suggested wording/rule tweak.
+
+---
+
+## Entries
+(leave Events logged: counter here and increment as you go)
+
+Events logged so far: 0
+
+1. [ ] Trigger:
+   - Effect:
+   - Why:
+   - Suggested tweak:
+
+2. [ ] Trigger:
+   - Effect:
+   - Why:
+   - Suggested tweak:
+
+...
