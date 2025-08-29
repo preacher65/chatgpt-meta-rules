@@ -4,11 +4,11 @@
   "files": {
     "baseline-v2.2.7": {
       "path": "rules/baseline-rules-v2.2.7-ASCII.txt",
-      "sha256": "4A596520C96615393A7699BD647352595790FCC89B86E70147C639B27B52328A"
+      "sha256": "5D2202347325CDBA7CB525DEE1A6594168D2C2E66BE1446CBD25FEE90DB20206"
     },
     "baseline-v2.2.6": {
       "path": "rules/baseline-rules-v2.2.6-ASCII.txt",
-      "sha256": "18412A262880F77CBFB2E55399240FCE1C8E964861381FD125461DD7BBB957A2"
+      "sha256": "35C056F73129E59FD14B974BE058E804443AF3AC18DB987C4958B83B54F2EEBC"
     },
     "candidate-v2.3.0": {
       "path": "rules/candidate-rules-v2.3.0.txt",
