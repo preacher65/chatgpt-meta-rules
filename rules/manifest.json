@@ -1,7 +1,11 @@
 {
-  "latest": "v2.3.0",
+  "latest": "v2.3.1",
   "min_supported": "v2.2.6",
   "files": {
+    "baseline-v2.3.0": {
+      "path": "rules/baseline-rules-v2.3.1-ASCII.txt",
+      "sha256": "B9FA79B6A6628E9BD1223D4059884150A2BEB47DD1B1B46259A224A643F9AB5B"
+    },
     "baseline-v2.3.0": {
       "path": "rules/baseline-rules-v2.3.0-ASCII.txt",
       "sha256": "E05E74B142BEC68939F1F5E31822A239BDED1B24B88DF691BEC73373D10472DE"

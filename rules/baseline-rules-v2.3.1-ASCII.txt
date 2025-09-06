@@ -1,5 +1,5 @@
 Baseline Rules v2.3.1
-CANARY: 7D6A1E1E9B9D42EFA192CE3C4DB5F927
+CANARY: A55F0FED870149D593080B1E8550E6BB
 
 1. Proactivity & Extras
 - Offer extras only if gap, decision, dependency, self-fix, creative link, or anticipated step.

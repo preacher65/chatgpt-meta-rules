@@ -1,1 +1,1 @@
-(Get-FileHash rules\baseline-rules-v2.3.0-ASCII.txt -Algorithm SHA256).Hash
+(Get-FileHash rules\baseline-rules-v2.3.1-ASCII.txt -Algorithm SHA256).Hash
