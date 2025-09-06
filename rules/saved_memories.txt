@@ -1,0 +1,39 @@
+Meta / Rules Dev: expected_latest_baseline = "v2.3.0" (supersedes prior)
+
+Availability preference (UK): Only recommend products or services that are currently available for purchase or sign-up in the UK from mainstream or reliable retailers/providers.
+– Do not recommend discontinued products at all, unless explicitly asked.
+– Do not present replaced products as if they were equivalent; if a new version exists, state clearly whether it is the same formula or a different one, and whether it may still meet requirements.
+– If rebranded but unchanged, present the new version and flag it as a rename.
+– Niche but available items (brand’s own shop, regional providers) are fine, but flag them clearly.
+
+Has confirmed they will stick with Dr Vegan Daily Multi (2 capsules/day) and switch to Vegetology Omega-3 (1 capsule/day). Update all relevant seed documents and supplement plans to reflect this omega-3 change, including recommended timing for taking the capsules, without altering the multivitamin choice.
+
+Bowel movement schedule is currently: Sunday afternoon, Tuesday afternoon, Thursday afternoon, with some small variation. User has not yet started taking any of the supplements under discussion, except Calcichew (required daily). FibreSMART and H&B Enzyme Formula have not been purchased. All other supplements have been purchased and may be kept or returned based on fit. The goal is to firm up loose stools while maintaining regularity.
+
+Is a wheelchair user with a heavy upper limb load. They experience occasional difficulty making a fist (mostly right hand, about twice per month), with fingers feeling like they pull slightly outward/inward, which improves with shaking the arm. They experience numbness if sleeping on that side, occasional tingling in the right elbow, an ache in the right little finger, and mild right shoulder discomfort. Their desk height prevents an ideal 90° elbow angle, and they often lean on elbows for balance or while using a trackball. They have had two recent knocks to the 'funny bone.' They have a history of scoliosis with corrective surgery, resulting in a short torso.
+
+Likely cause identified: intermittent ulnar nerve irritation, probably cubital tunnel syndrome with possible postural/shoulder involvement. Contributing factors include sustained elbow flexion, wrist extension, elbow pressure, and workstation ergonomics.
+
+Actions agreed:
+- Reduce nerve compression/traction.
+- Trial daytime supports (Bearhug, Neo-G sleeves for proprioception; splint for motion limit if needed).
+- At night: soft cubital tunnel splint to avoid deep flexion.
+- Wrist supports optional for long keyboard sessions.
+- Improve desk ergonomics: forearm support, minimise reach, avoid leaning weight on elbows.
+- Take micro-breaks every 20–30 minutes; straighten arms.
+- Exercises: gentle ulnar nerve glides (if not painful), scapular activation, tendon glides, neck/shoulder stretches.
+- Created 'Ulnar Nerve Posture – Red Flags' card (pure white, flat icons) to avoid risky positions.
+
+Zurich personal pension was valued at £74,847.98 in May 2025. The plan is a 'Personal Pension Plan (DL)' with a pension age of 60 (retirement date 30/10/2025). User believes they became eligible to access the pension from age 55 but elected to defer. The pension was likely started around 30 years ago, with no contributions made in at least 25 years.
+
+Zurich pension is invested in the "Zurich Managed AP" fund.
+
+Instructs that whenever an environment reset is detected (e.g. file paths or memory are lost), ChatGPT must notify the user explicitly — even if the reset appears quiet or partial. This is a standing directive.
+
+Has confirmed they will need to register for Self Assessment to support large personal pension (SIPP) contributions from savings, especially to utilise carry forward allowances.
+
+Will begin drawing the NHS 1995 pension section from age 60 or 61 under a retire-and-return arrangement. While continuing to work, they expect to earn between £32,000 and £88,000 per year depending on caring responsibilities for their mother. They do not expect to work full-time initially.
+
+Is returning to work part-time due to caring for their mother. They have a new manager and potential role change that may reduce salary. Depending on job satisfaction, they may reduce hours further or retire early. They may also purchase an annuity before reaching state pension age, especially as they do not expect their life expectancy to be the same as a healthy man of the same age.
+
+Is drafting a Job Description for an IT Solutions Architect role at an NHS Trust. The role includes: Solutions Architecture, documentation, CMDB relationship mapping, forming transformation squads, forecasting, finance model review, service optimisation, complex situation management, support for change/transformation, cloud-first scalable designs with cyber security, Agile and ITIL knowledge, and ensuring BAU handover. JD should follow NHS format and incorporate similar existing NHS roles. User intends to return to finalize this later.

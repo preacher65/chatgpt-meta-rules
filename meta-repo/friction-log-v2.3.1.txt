@@ -1,0 +1,61 @@
+# Friction Log v2.3.0
+
+Events logged so far: 10
+
+1. [ ] Trigger:
+   - Hesitation on imperative due to 'confirm heavy action' rule.
+   - Effect: Model paused instead of executing directly.
+   - Why: Rule conflict between imperative execution and heavy action confirmation.
+   - Suggested tweak: Clarify that read-only imperatives execute directly without confirmation.
+
+2. [ ] Trigger:
+   - Over-long answers when multiple requests bundled.
+   - Effect: Responses too verbose, harder to scan.
+   - Why: No clear guidance on compactness vs completeness for multi-requests.
+   - Suggested tweak: Default to compact mainline with option to expand.
+
+3. [ ] Trigger:
+   - Artefact term 'Q-block' surfaced via prefs minification.
+   - Effect: Confusing non-standard label.
+   - Why: Minification compressed wording, introducing artefacts.
+   - Suggested tweak: Ensure minification strips safely without artefacts.
+
+4. [ ] Trigger:
+   - Layering ambiguity: global prefs v2.0 vs project rules v2.2.6 caused drift.
+   - Effect: Inconsistent behaviour between chats.
+   - Why: Lack of clear precedence hierarchy.
+   - Suggested tweak: Explicitly state precedence: Global overlays Project, unless sealed.
+
+5. [ ] Trigger:
+   - Snapshot directive persistence unclear (chat vs memory vs project).
+   - Effect: Uncertainty whether snapshot applies per chat or across sessions.
+   - Suggested tweak: Define snapshot persistence explicitly: per-chat unless pinned.
+
+6. [x] Trigger (RESOLVED in v2.2.7):
+   - "Questions for you" and "Closure options" appeared together.
+   - Fix: Closure suppressed while questions active.
+
+7. [x] Trigger (RESOLVED in v2.2.7):
+   - Closure treated as mandatory end-cap with questions outstanding.
+   - Fix: Closure only when no clarifications remain.
+
+8. [ ] Trigger:
+   - Confident but wrong mechanics; constraint drift; entity conflation; stale volatile facts.
+   - Suggested tweak: Add verification gate; lock constraints; attributes tables; re-check volatile facts; strengthen uncertainty defaults.
+
+9. [ ] Trigger:
+   - Project chat claimed it fetched from a URL (hallucinated network access).
+   - Suggested tweak: Project loader must **never** claim network fetch; only load local files.
+
+10. [ ] Trigger:
+   - Checksum verification failed in Projects.
+   - Suggested tweak: Drop SHA-256 in Projects; use **CANARY** token for proof-of-load.
+
+
+11. [ ] Trigger:
+   - Loader text says "Never claim network … No URLs, no hashing, no remote fetch" for Project chats.
+   - Effect: Interpreted as a hard ban on any network use, blocking legitimate web tool access.
+   - Why: Rule was meant only to prevent false claims of network fetch for baselines, but phrasing over-generalised.
+   - Suggested tweak:
+     - Clarify: "Never hallucinate a remote fetch. Baselines must be loaded only from local Project Files. For general queries, use the web tool if actually available; otherwise say so explicitly."
+     - Rework Project loaders (and Custom GPT loaders for consistency) to distinguish clearly between baseline fetch policy and runtime web research.
