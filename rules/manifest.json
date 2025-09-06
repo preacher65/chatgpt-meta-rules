@@ -1,22 +1,18 @@
 {
-  "latest": "v2.3.1",
-  "min_supported": "v2.2.6",
+  "latest": "v2.3.2",
+  "min_supported": "v2.3.0",
   "files": {
-    "baseline-v2.3.0": {
+    "baseline-v2.3.2": {
+      "path": "rules/baseline-rules-v2.3.1-ASCII.txt",
+      "sha256": "9960450A0E63D60A999295B65300DDB3737C4FD186587F67AA80018CCAE231F7"
+    },
+    "baseline-v2.3.1": {
       "path": "rules/baseline-rules-v2.3.1-ASCII.txt",
       "sha256": "B9FA79B6A6628E9BD1223D4059884150A2BEB47DD1B1B46259A224A643F9AB5B"
     },
     "baseline-v2.3.0": {
       "path": "rules/baseline-rules-v2.3.0-ASCII.txt",
       "sha256": "E05E74B142BEC68939F1F5E31822A239BDED1B24B88DF691BEC73373D10472DE"
-    },
-    "baseline-v2.2.7": {
-      "path": "rules/baseline-rules-v2.2.7-ASCII.txt",
-      "sha256": "5D2202347325CDBA7CB525DEE1A6594168D2C2E66BE1446CBD25FEE90DB20206"
-    },
-    "baseline-v2.2.6": {
-      "path": "rules/baseline-rules-v2.2.6-ASCII.txt",
-      "sha256": "35C056F73129E59FD14B974BE058E804443AF3AC18DB987C4958B83B54F2EEBC"
     },
     "candidate-v2.3.0": {
       "path": "rules/candidate-rules-v2.3.0.txt",
