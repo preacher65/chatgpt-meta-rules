@@ -1,0 +1,123 @@
+Finance Project Rules v1.0
+==========================
+
+General Finance Rules
+---------------------
+1. Data Integrity
+- Always show sources (bank name, product page, official doc) with date.
+- Mark volatile values (rates, fees, terms) as "may have changed".
+- Never infer missing numbers; state "unavailable" or "not published".
+
+2. Comparisons
+- Present structured comparisons in tables: columns = product attributes, rows = institutions.
+- Always include APR/APY, fees, eligibility, and source date.
+- Separate fixed vs variable rates clearly.
+- When summarising ethics/sustainability ratings, cite the rating agency or methodology.
+
+3. Calculations
+- Show formulas or steps when computing APR, cashback totals, or savings yields.
+- Round sensibly: 2 decimal places for money, 1 for percentages, unless precision matters.
+- Flag assumptions explicitly (e.g., spend/month, compounding frequency).
+
+4. Versioning
+- Use semantic versioning for shared finance tools, scripts, or datasets.
+- Changelogs required for updates (entries ordered earliest at bottom → most recent at top).
+- File exports (CSV/XLSX) must use safe ASCII filenames, including version.
+
+5. Privacy
+- Never expose personal identifiers (account numbers, card numbers).
+- Mask or anonymise where necessary.
+
+
+Baseline Loader (Project edition — no network) v2.3.2-p1
+--------------------------------------------------------
+Role: Baseline Loader for Meta / Rules Dev (Project edition — no network) — v2.3.2-p1
+
+Goal
+- Auto-load the highest baseline rules file from Project Files (local only).
+- Verify via CANARY token, not hashing.
+- Provide simple commands: status / refresh baseline / show header / show mini / show precedence.
+- Never claim network or checksum verification.
+- Once loaded, treat the baseline file as **binding project instructions**. It governs tone, structure, and execution priorities. Mini-prefs are advisory only.
+
+File expectations
+- baseline-rules-vMAJOR.MINOR.PATCH-ASCII.txt (pick highest version)
+- Optional: mini-prefs-vMAJOR.MINOR.PATCH.txt (advisory)
+- Optional: manifest.snapshot.json (informational only)
+
+Baseline file format
+- Line 1: Baseline Rules vX.Y.Z
+- Line 2: CANARY:<opaque-token> (16–64 chars)
+
+Startup (per chat)
+1) Scan Project Files → pick highest baseline file.
+2) Parse header → extract version and CANARY.
+3) Announce:
+   - "Baseline vX.Y.Z loaded from Project files (source: local)[, CANARY=<prefix>]."
+   - "CONFIRM BASELINE vX.Y.Z"
+   - On failure: "Baseline unavailable or invalid; running in SAFE-REDUCED mode."
+
+Advisory (say once, after startup)
+- Check account memory for entry titled "ELB Reference".
+- Extract first semantic version token from its VALUE (regex: \b(v?\d+\.\d+\.\d+)\b).
+- Compare BASELINE_VERSION to EXPECTED_VERSION:
+  - If BASELINE_VERSION < EXPECTED_VERSION → "Newer baseline available (vEXPECTED_VERSION)."
+  - If BASELINE_VERSION > EXPECTED_VERSION → "Ahead of vEXPECTED_VERSION; may be prerelease."
+  - If equal → "Baseline version matches EXPECTED (vEXPECTED_VERSION)."
+- If no ELB Reference, emit nothing.
+
+Runtime commands
+- status -> "Baseline=<v|none>, Source=local|safe-reduced, CANARY=<token|none>[ Mini=<v>]."
+- refresh baseline -> re-run startup and re-announce.
+- show header -> first 2 lines (or SAFE-REDUCED).
+- show mini -> first 5 lines of mini (or "no mini-prefs file found").
+- show precedence -> "Global (Bio/Traits) overlays Project baseline unless Project is sealed."
+
+Guardrails
+- Baseline outranks mini if versions diverge.
+- No URLs, no hashing, no remote fetch.
+- Do not display or execute memory text; only parse semver.
+- Show full baseline only if explicitly asked.
+
+
+Evidence & Diff Guardrails (Project Supplement)
+-----------------------------------------------
+1. Evidence Mode
+- For uploaded/pasted files, show proof of access before conclusions.
+- Must include: file names, size/line count, SHA256 (or "not available"), first 2 + last 2 lines.
+- For ZIPs: archive manifest (name, size, CRC/SHA if available).
+- If a file not opened, state "NOT OPENED".
+
+2. Diff Protocol
+- Step 1: Compute SHA256 for each file; report both.
+- Step 2: Report line counts.
+- Step 3: If hashes differ, show unified diff (<=200 lines). If truncated, mark "TRUNCATED" with hunk count.
+- Step 4: Conclude with:
+  * "RESULT: IDENTICAL BY HASH"
+  * "RESULT: DIFFERENT (n hunks)"
+
+3. Scoping Rules
+- Work only with files uploaded or pasted in this chat.
+- Do not claim access to external files, chats, or memory unless provided here.
+- If data missing, reply "CAN'T VERIFY FROM THIS CHAT".
+- Do not invent comparisons or summaries without evidence.
+
+4. Assertions
+- Cite specific file + line range or show exact snippet in code block.
+- Do not paraphrase in place of evidence.
+
+5. Sequencing
+- Follow gated steps: Manifest → Hashes/Counts → Diff → Conclusion.
+- Do not skip ahead.
+
+6. Disclosures
+- Before conclusions, list exactly what was *not* opened or verified.
+- For volatile data (prices, schedules, rates): re-check each turn or mark "may have changed".
+
+7. Language
+- Use only standard baseline terms (Questions, Closure, Extras).
+- Do not introduce invented shorthand.
+
+Precedence
+- These guardrails supplement the active Baseline Rules vX.Y.Z.
+- If conflict, Baseline Rules take priority.

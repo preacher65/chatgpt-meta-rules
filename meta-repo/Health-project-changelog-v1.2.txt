@@ -1,0 +1,26 @@
+# Health Project Changelog v1.2
+
+## Diff v1.1 → v1.2
+
+### Policy
+- Clarified memory discipline: account memory and global prefs are strictly read-only.
+- Normalised seal control: now use `#seal` / `#unseal` (consistent with other projects).
+- Added PHI/PII guard: do not store or infer personal identifiers; treat health data as volatile.
+
+### Loader
+- Added Project Loader v2.3.2-p1 section to align with IT, Finance, Sealed, and D&D projects.
+- Loader handles baseline startup, advisory, runtime commands, and precedence.
+
+### Supplements
+- Removed embedded baseline-like content (Tone, Proactivity, Accuracy, Troubleshooting, Outputs).
+- Added Health-specific guardrails:
+  * Evidence & Speculation — separate evidence/speculation/anecdote with explicit tags.
+  * Advisory — preserve advisory framing; forbid prescriptive outputs; prevent artefacts from freezing directives as rules.
+  * Framing — project artefacts must be descriptive, not prescriptive guidelines.
+
+---
+
+## Notes
+- v1.2 fully aligns Health projects with the loader-based model.
+- All baseline-derived sections now live in `baseline-rules-vX.Y.Z-ASCII.txt`.
+- Health instructions focus only on project policy and domain-specific guardrails.

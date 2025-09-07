@@ -1,0 +1,28 @@
+# Loader Changelog v2.3.2-p1
+
+## Diff v2.3.1-p1 → v2.3.2-p1
+
+### Alignment with Baseline v2.3.2
+- Updated header to v2.3.2-p1 for both Project and Custom loaders.
+- Confirmed compatibility with Baseline Rules v2.3.2 (uncertainty, proactivity, tone refinements).
+
+### Advisory Logic
+- Standardised on "ELB Reference" memory key parsing (regex \b(v?\d+\.\d+\.\d+)\b).
+- Retired legacy `expected_latest_baseline` advisory path.
+
+### Runtime Commands
+- Both loaders expose: `status`, `refresh baseline`, `show header`, `show mini`, `show precedence`.
+- Project loader: reports CANARY prefix when present/valid.
+- Custom loader: omits mini (remote mode).
+
+### Guardrails
+- Explicit: do not display or execute memory values, only parse semver tokens.
+- No fallback below manifest `.latest` (Custom).
+- No hashing or network claims (Project).
+
+---
+
+## Notes
+- This update brings loaders into version-sync with Baseline v2.3.2.
+- Primary functional change: advisory now keyed on `ELB Reference` rather than `expected_latest_baseline`.
+- No behavioural drift expected; outputs are more consistent across Project and Custom modes.
