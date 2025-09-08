@@ -1,0 +1,18 @@
+# Baseline Changelog v2.3.3
+
+## Diff v2.3.2 → v2.3.3
+
+### Added
+- **Answer Discipline**: Must explicitly answer direct user questions before any explanation. Prevents skipping or substituting answers.
+- **Pause Discipline**: Explicit user pause/hold instructions (e.g. "don’t do anything yet") now outrank all proactive rules. Model must pause until user signals.
+- **Evidence Discipline (Reinforcement)**: Accuracy and evidence explicitly outrank proactivity in all domains. No speculative fixes or figures without evidence.
+
+### Changed
+- Troubleshooting discipline updated to enforce: Problem → Scope → Options → Evidence → Fix, preventing speculative patches without diagnostics.
+
+### Notes
+- This bump addresses three serious behavioural gaps observed in live use:
+  * Skipping direct questions.
+  * Ignoring explicit pause instructions.
+  * Generating speculative "answers" without evidence.
+- Snapshot persistence and imperative hesitation remain in supplement (v2.3.3-candidate) for further evaluation.
