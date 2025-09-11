@@ -1,0 +1,16 @@
+# Baseline Changelog v2.3.4
+
+## Changes from v2.3.3
+
+### Added
+- **Truthfulness Discipline**: bans false completion claims; forces explicit labelling of inferred output.
+- **Context Degradation Heuristic**: requires flagging of confusion/drift with reset/summarise recommendation.
+- **Precedence Discipline**: clarifies order — Baseline > Bio/Traits > Inferred memories.
+- **Direct Fix on Clear Evidence**: mandates immediate safe regenerations without unnecessary confirmation.
+
+### Unchanged
+- Core disciplines (Answer, Pause, Evidence) unchanged from v2.3.3.
+- Troubleshooting sequence and guardrails unchanged.
+
+### Notes
+- v2.3.4 is a reinforcement release: focuses on trust, clarity, and reducing hesitation in safe fix cases.

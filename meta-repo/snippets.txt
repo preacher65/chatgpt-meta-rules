@@ -1,0 +1,61 @@
+# ChatGPT Interaction Templates and Context Awareness Notes
+# Version: 1.0
+# ASCII-safe, no special characters
+
+---
+
+1. SUMMARY PROMPT TEMPLATES
+
+Template A: Concise technical summary
+--------------------------------------
+Please provide a concise summary of the key points, decisions, and outstanding questions from this conversation so far. Focus on technical details and any action items.
+
+Template B: Executive summary
+-----------------------------
+Summarise the main outcomes and important context from this conversation in a clear, brief overview suitable for quick reference.
+
+Template C: Summary with next steps
+-----------------------------------
+Summarise what we have covered so far and clearly list any next steps or actions required.
+
+---
+
+2. CHAT RESTART / CONTEXT RESET TEMPLATES
+
+Template A: Summary intro for new chat
+-------------------------------------
+Continuing from a previous conversation, here is a summary of key points and context to pick up from:
+
+[Paste your summary here]
+
+Please use this as the starting context for our discussion.
+
+Template B: Context reset with focus
+------------------------------------
+Starting fresh with the following summary from our last chat:
+
+[Paste your summary here]
+
+Let’s proceed from here.
+
+Template C: Focused restart
+---------------------------
+Here is a brief recap of the previous discussion to maintain context:
+
+[Paste your summary here]
+
+Please prioritise accuracy and clarity as before.
+
+---
+
+3. CONTEXT DEGRADATION HEURISTIC FOR TRAITS/BASELINE
+
+If, during the conversation, the assistant detects signs of confusion, gaps in context, or reduced answer quality that may be linked to conversation length or complexity, it should explicitly mention this and recommend summarising or resetting context.
+
+The assistant should flag these issues as potential context degradation, even though exact token counts are unavailable.
+
+This flagging should be clear, concise, and framed as an observation or recommendation, not a certainty.
+
+---
+
+# End of file
