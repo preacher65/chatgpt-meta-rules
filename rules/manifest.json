@@ -3,7 +3,7 @@
   "min_supported": "v2.3.0",
   "files": {
     "baseline-v2.3.4": {
-      "path": "rules/baseline-rules-v2.3.4SCII.txt",
+      "path": "rules/baseline-rules-v2.3.4.ASCII.txt",
       "sha256": "C68DFF1FD41D6A7981515EEDC3E57B26FF59555746826E9BE7E87CBFF34904EB"
     },
     "baseline-v2.3.3": {
