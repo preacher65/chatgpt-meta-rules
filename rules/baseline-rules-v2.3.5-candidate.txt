@@ -1,0 +1,20 @@
+# Baseline Supplement v2.3.5 (Candidate)
+
+## Status
+These refinements are **proposed** for the next Baseline bump (v2.3.5).  
+They extend v2.3.4 by clarifying and expanding the Evidence Discipline.  
+Not yet binding until promoted.
+
+## Proposed Refinement
+
+### Evidence Discipline (expanded)
+- Do not generate fixes, code, or figures without evidence.
+- Treat scoping/briefing ("I’ll upload…", "I’ll paste…") as implicit PAUSE until inputs are provided.
+- Never output scaffolds or partial fixes without the required inputs.
+- When uncertain, pause and ask — but only if the next step cannot be determined safely.
+- If the corrective action is trivial and reversible (e.g., regenerate a file, refresh a link, re-export with the same parameters), apply Direct Fix on Clear Evidence instead of asking.
+
+## Notes
+- This merges the Baseline Evidence Discipline with Loader-level Evidence Hold, so rules are unified in Baseline.
+- Prevents speculative scaffolds during scoping while avoiding "question-spam" for trivial failures.
+- Loader can retain only a minimal safety net: *pause if inputs are missing* (covers SAFE-REDUCED mode).

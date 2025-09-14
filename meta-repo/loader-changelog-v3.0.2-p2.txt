@@ -1,0 +1,24 @@
+# Loader Changelog v3.0.2-p2
+
+## Diff v3.0.2-p1 → v3.0.2-p2
+
+### Runtime commands
+- Confirmed **index-less** command set.
+- Kept: `status`, `refresh baseline`, `show baseline header`, `grep baseline <pat>`, `read baseline`, `show precedence`.
+- Removed: `show mini`, `list baseline`, `show baseline <sec>`.
+
+### Mini
+- Mini-prefs formally retired; all related commands removed.
+
+### Startup / Full Read
+- Step 3b (Full Read) unchanged from v3.0.2-p1:
+  - Read entire baseline file into working context.
+  - Emit: `Baseline read: <N lines>`.
+  - Rules apply silently unless queried.
+
+### Notes
+- Canonical File Rule remains in project instructions, not in the loader.
+- No behavioural changes beyond cleanup of runtime commands and removal of mini support.
+
+## Compatibility
+- Requires Baseline >= v2.3.3.

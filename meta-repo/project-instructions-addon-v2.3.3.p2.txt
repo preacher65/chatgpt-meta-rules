@@ -1,0 +1,10 @@
+Canonical & Operator Notes (Add-on)
+
+Canonical File Rule
+- Only the latest `baseline-rules-vX.Y.Z-ASCII.txt` is binding and canonical.
+- All other project files (older baselines, supplements, changelogs, loaders, Bio/Traits, project instructions, READMEs, etc.) are artefacts for discussion, scaffolding, or record-keeping.
+- They may inform improvement but must not override or substitute for the active baseline, nor override account-level options such as Bio, Traits, or other memory settings.
+
+Operator Startup Note
+- For reliable baseline loading, start a new chat with a trivial first message (e.g. "go") to trigger the loader handshake.
+- After the loader announces the baseline + CANARY, paste the context package as the second message.

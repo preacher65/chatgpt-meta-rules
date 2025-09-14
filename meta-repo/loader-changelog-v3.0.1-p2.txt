@@ -1,0 +1,16 @@
+# Loader Changelog v3.0.1-p2
+
+## What changed (vs v3.0.1-p1)
+- **Evidence Hold Discipline trimmed** to a minimal safety net only:
+  - If inputs are explicitly missing (e.g., user says they will upload a file/log), treat as PAUSE until provided.
+  - No scaffolds, guesses, or fixes allowed while inputs are missing.
+- Removed the verbose Evidence Hold wording that duplicated Baseline behaviour (now absorbed into Baseline v2.3.5 candidate).
+
+## Rationale
+- Baseline v2.3.4 + v2.3.5 candidate now carry the full Evidence Discipline (scoping pause, no scaffolds, refined "ask only when ambiguous").
+- Loader only needs a lightweight safety net to prevent scaffolding when Baseline is absent (SAFE-REDUCED mode).
+- This reduces duplication and avoids question-spam while retaining core safety.
+
+## Compatibility
+- Requires Baseline ≥ v2.3.3 (Answer, Pause, Evidence disciplines).
+- Fully backward-compatible with v3.0.1-p1, but outputs simplified Evidence wording in loader section.

@@ -1,0 +1,17 @@
+# Loader Changelog v3.0.0-p1
+
+## What changed (vs v2.3.2-p1)
+- Decoupled loader versioning from Baseline version numbers.
+- Added Evidence Hold Discipline:
+  - Treat scoping/briefing as a hold.
+  - Do not proceed beyond Evidence without explicit user confirmation.
+  - Pause at decision/dependency/missing-input points; ask rather than guess.
+  - No scaffold/fixes until inputs are present.
+- Tightened anti-fabrication:
+  - Only print version/CANARY when parsed from a real file.
+  - Silent advisory when no ELB Reference exists.
+- Startup handshake guaranteed single-print per chat.
+- Clarified precedence line in `show precedence`.
+
+## Compatibility
+- Requires Baseline >= v2.3.3 (Evidence, Answer, Pause).

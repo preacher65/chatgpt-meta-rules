@@ -1,0 +1,21 @@
+# Loader Changelog v3.0.1-p1
+
+## What changed (vs v3.0.0-p1)
+- **Removed all legacy mini-prefs references:**
+  - Dropped `Mini=<v>` field from `status` output.
+  - Removed `show mini` runtime command.
+  - Deleted “Optional: mini-prefs” from File expectations.
+  - Removed guardrail line “Baseline outranks mini if versions diverge.”
+- **Contract change:** `status` output and runtime commands are now simplified.  
+  - Old: "Baseline=vX.Y.Z, Source=local|remote, CANARY=<token>[ Mini=<v>]."  
+  - New: "Baseline=vX.Y.Z, Source=local|remote, CANARY=<token>."
+
+## Rationale
+- Mini-prefs were retired from the active stack (Traits + Bio replaced them).  
+- Retaining references caused ghost outputs (`Mini=none`).  
+- Their removal is a **structural interface change**, hence a minor bump (`3.0.0 → 3.0.1`), not just `p2`.
+
+## Compatibility
+- Requires Baseline ≥ v2.3.3 (Evidence, Answer, Pause).  
+- Not backward-compatible with older projects that still use mini-prefs.  
+- Projects must upgrade to v3.0.1-p1 if they no longer expect `Mini` handling.
